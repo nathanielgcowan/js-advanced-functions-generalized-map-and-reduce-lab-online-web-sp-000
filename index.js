@@ -3,6 +3,9 @@
 
 function map(sourceArray, callBack) {
   let array = []
-
-  return array;
+  for (let i = 0; i < sourceArray.length; i++) {
+    let object = sourceArray[i]
+    sourceArray.push(callBack(object))
+  }
+  return array
 }
