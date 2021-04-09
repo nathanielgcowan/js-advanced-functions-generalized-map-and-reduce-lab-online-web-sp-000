@@ -15,7 +15,7 @@ function map(sourceArray, callBack) {
 function reduce(sourceArray, callBack, starting) {
   let array = (!!starting) ? starting: sourceArray[0]
   let i = (!!starting) ? 0 : 1
-  
+
   for (; i < sourceArray.length; i++) {
     array = callBack(sourceArray[i], array)
   }
