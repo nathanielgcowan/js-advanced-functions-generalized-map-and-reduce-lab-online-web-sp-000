@@ -12,8 +12,12 @@ function map(sourceArray, callBack) {
 }
 
 // should expect a source array and optionaly a starting bale. all the test will pass an array an (sometimes) a starting point.
-function reduce(sourceArray, callBack) {
-    let array = []
-
-    return array;
+function reduce(sourceArray, callBack, starting) {
+  let array = (!!starting) ? starting: sourceArray[0]
+  let i = (!!starting) ? 0 : 1
+  
+  for (; i < sourceArray.length; i++) {
+    array = callBack(sourceArray[i], array)
+  }
+  return array;
 }
