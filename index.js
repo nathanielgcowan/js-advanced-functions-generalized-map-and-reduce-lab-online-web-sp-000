@@ -7,5 +7,5 @@ function map(sourceArray, callBack) {
     let object = sourceArray[i]
     sourceArray.push(callBack(object))
   }
-  return array
+  return array;
 }
