@@ -7,4 +7,5 @@ function map(src, cb) {
     r.push(cb(theElement))
   }
 
-  return
+  return r;
+}
