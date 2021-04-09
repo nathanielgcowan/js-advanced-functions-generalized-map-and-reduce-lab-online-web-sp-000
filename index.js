@@ -4,5 +4,5 @@
 function map(sourceArray, callBack) {
   let array = []
 
-  return array
+  return array;
 }
